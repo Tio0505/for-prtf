@@ -1,0 +1,15 @@
+.hero {
+  width: 100%;
+  height: calc(100vh - 10.15rem);
+
+  background: url("../../../assets/images/hero-bg.png") lightgray 50% / cover
+    no-repeat;
+
+  position: relative;
+
+  &-card {
+    position: absolute;
+    top: 25%;
+    right: 6rem;
+  }
+}

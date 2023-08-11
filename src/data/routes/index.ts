@@ -1,0 +1,9 @@
+export const HOME = "/";
+export const ABOUT = "about";
+export const CONTACTS = "contacts";
+export const SHOP = "shop";
+export const SHOP_DETAILS = "shop/{productId}";
+export const COMPARE = "compare";
+export const CART = "cart";
+export const CHECKOUT = " checkout";
+export const BLOG = "blog";

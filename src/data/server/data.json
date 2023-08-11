@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "sku": "1",
+      "category": "Sofas",
+      "name": "Asgaard Sofa",
+      "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "price": 250000,
+      "sizes": ["XS", "L", "XL"],
+      "colors": ["#816DFA", "#000000", "#B88E2F"],
+      "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "rates": [5, 4, 5, 4, 5],
+      "images": []
+    }
+  ]
+}

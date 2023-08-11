@@ -1,0 +1,55 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexContainerRow {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+// MEDIA QUERY MANAGER
+/*
+  0 - 600px:       is where our normal styles apply
+  600 - 900px:     Tablet portrait
+  900 - 1200px:    Tablet landscape
+  [1200 - 1800]    Desktop
+  1800px + :       Big desktop 
+
+  Breakpoints
+- tab-port
+- tab-land
+- desktop
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+*/
+
+@mixin responsive($device) {
+  @if $device == tab-port {
+    @media only screen and (min-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $device == tab-land {
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $device == desktop {
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $device == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

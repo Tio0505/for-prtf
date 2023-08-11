@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+
+  @include responsive(tab-port) {
+    font-size: 56.5%;
+  }
+  @include responsive(tab-land) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: $font-color-primary;
+  font-size: 1.6rem;
+
+  background: $color-white;
+  box-sizing: border-box;
+}

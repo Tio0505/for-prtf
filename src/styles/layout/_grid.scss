@@ -1,0 +1,12 @@
+.container {
+  max-width: 100%;
+  margin: auto;
+
+  @include responsive(desktop) {
+    max-width: 120rem;
+  }
+
+  @include responsive(big-desktop) {
+    max-width: 160rem;
+  }
+}

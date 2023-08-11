@@ -1,0 +1,62 @@
+@import "../../styles/main.scss";
+
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &.small {
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+  }
+  &.medium {
+    padding: 1.2rem 1.5rem;
+  }
+  &.large {
+    padding: 2.5rem 3rem;
+    font-size: 2rem;
+  }
+
+  &.rounded {
+    &-sm {
+      border-radius: 6px;
+    }
+    &-md {
+      border-radius: 10px;
+    }
+    &-lg {
+      border-radius: 15px;
+    }
+    &-xl {
+      border-radius: 50px;
+    }
+    &-none {
+      border-radius: 0;
+    }
+  }
+
+  &.contained {
+    border: none;
+    outline: none;
+    &.primary {
+      background-color: $primary-color;
+      color: $color-white;
+    }
+    &.secondary {
+      background-color: $secondary-color;
+      color: $color-black;
+    }
+    &.default {
+      background-color: $color-white;
+      color: $primary-color;
+    }
+  }
+
+  &.outlined {
+  }
+}
